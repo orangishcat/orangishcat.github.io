@@ -172,10 +172,12 @@ import { projects, blogs } from "../data.ts";
             </li>
           </ul>
         </p>
-        <div class="space-y-6">
+        <div
+          class="space-y-6 [&>div>div]:grid [&>div>div]:grid-cols-5 [&>div>div]:content-stretch [&>div>div]:gap-3"
+        >
           <div>
             <h3>Games I like</h3>
-            <div class="grid grid-cols-5 gap-3">
+            <div>
               <A href="https://www.minecraft.net/en-us">
                 <img
                   draggable="false"
@@ -200,7 +202,7 @@ import { projects, blogs } from "../data.ts";
           </div>
           <div>
             <h3>Games I play occasionally</h3>
-            <div class="grid grid-cols-5 gap-3">
+            <div>
               <A href="https://deltarune.com/">
                 <img
                   draggable="false"
@@ -226,7 +228,7 @@ import { projects, blogs } from "../data.ts";
           </div>
           <div>
             <h3>Games I want to try</h3>
-            <div class="grid grid-cols-5 gap-3">
+            <div>
               <A href="https://www.celestegame.com/">
                 <img draggable="false" src="/assets/game icons/celeste.avif" />
               </A>
