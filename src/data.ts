@@ -16,6 +16,11 @@ export const projects = [
     url: "https://orangishcat.github.io/page-proxy/"
   },
   {
+    title: "cursed-tetris",
+    description: "Tetris with powerups, fully in your terminal. My first ever Rust project! I quite enjoyed learning Rust.",
+    url: "https://github.com/orangishcat/cursed-tetris"
+  },
+  {
     title: "Tanks: the Crusades",
     description: "A cross-platform tank game where the player controls a blue tank with the goal of destroying all enemy tanks to clear a level.",
     url: "https://github.com/aehmttw/Tanks",
