@@ -5,6 +5,8 @@ combines all the md files in a directory into one big one that i can post on soc
 import re
 from pathlib import Path
 
+from natsort import natsorted
+
 START_FOLDER = "personal-website"
 PROJECT_DIR = Path(__file__).parent
 START_DIR = PROJECT_DIR / "src" / "content" / "blog" / START_FOLDER
@@ -25,8 +27,8 @@ def read_file(filename: Path):
     file_title = title_match.group(1) if title_match else filename.stem
     file_content = TITLE_RE.sub("", file_content)
     file_content = IMAGE_RE.sub(to_asset_url, file_content)
-    return f"## {file_title}\n{file_content}"
+    return f"# {file_title}\n{file_content}"
 
-files = sorted(START_DIR.glob("*.md"))
+files = natsorted(START_DIR.glob("*.md"))
 with open(PROJECT_DIR / "out.md", "w") as w:
     w.write("\n\n---\n\n".join(read_file(f) for f in files))

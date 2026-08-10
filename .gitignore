@@ -2,6 +2,7 @@
 dist/
 .zed
 out.md
+.venv
 
 # generated types
 .astro/
