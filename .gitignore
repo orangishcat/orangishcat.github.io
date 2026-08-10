@@ -2,7 +2,6 @@
 dist/
 .zed
 out.md
-join.py
 
 # generated types
 .astro/
