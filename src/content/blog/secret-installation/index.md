@@ -1,5 +1,5 @@
 ---
-title: Installation instructios
+title: Installation instructions
 ---
 
 These instructions are for Chromium-based browsers (e.g. Chrome, Brave, Microsoft Edge). If you are using a different browser, the instructions still work, but you will need to do a bit of figuring things out yourself.
@@ -16,10 +16,10 @@ Install the Tampermonkey browser extension from their [homepage](https://www.tam
 ## 2. Accept permissions
 
 - Open the extensions menu and click Tampermonkey.
-      ![[./Attachments/Pasted image 20260824154743.avif]]
+        ![[./Attachments/Pasted image 20260824154743.avif]]
 
 - Afterwards, you should see something like this.
-      ![[./Attachments/Pasted image 20260824154801.avif]]
+        ![[./Attachments/Pasted image 20260824154801.avif]]
 
 ### Chrome/Chromium only: Allow User Scripts
 
