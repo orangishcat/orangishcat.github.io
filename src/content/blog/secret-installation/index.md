@@ -16,10 +16,10 @@ Install the Tampermonkey browser extension from their [homepage](https://www.tam
 ## 2. Accept permissions
 
 - Open the extensions menu and click Tampermonkey.
-        ![[./Attachments/Pasted image 20260824154743.avif]]
+            ![[./Attachments/Pasted image 20260824154743.avif|256]]
 
 - Afterwards, you should see something like this.
-        ![[./Attachments/Pasted image 20260824154801.avif]]
+            ![[./Attachments/Pasted image 20260824154801.avif|256]]
 
 ### Chrome/Chromium only: Allow User Scripts
 
@@ -32,7 +32,7 @@ Result:
 
 Reopen the Tampermonkey extension. The blue banner you saw earlier should disappear. Otherwise, repeat the steps again and make sure Allow User Scripts is checked.
 
-![[./Attachments/Pasted image 20260824155021.avif]]
+![[./Attachments/Pasted image 20260824155021.avif|256]]
 
 ## 3. Install the script
 
@@ -56,3 +56,9 @@ Check to make sure your answers are filled in and correct! If the script gives y
 - **Keypress not working**: Reload the page, wait a bit, click the assignment, then immediately press Opt+V. If the question looks different to what you've seen before in other assignments, the script might need an update.
 
 Still not working? DM or ping me on Discord
+
+## Update script
+
+If the script needs updating again and I already have updated it, click the Tampermonkey extension icon, `Utilities`, then `Check for userscript updates`.
+
+![[./Attachments/Screenshot 2026-08-24 at 5.49.13 PM.avif|256]]
