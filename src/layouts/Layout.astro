@@ -1,5 +1,6 @@
 ---
 import MetaHead from "../components/MetaHead.astro";
+import Banner from "../components/Banner.astro";
 const { title } = Astro.props;
 ---
 
@@ -11,7 +12,7 @@ const { title } = Astro.props;
   </head>
   <body>
     <main
-      class="mx-auto px-16 pt-20 pb-44 min-h-screen justify-center place-items-center ml-1 relative"
+      class="hidden sm:block mx-auto px-16 pt-20 pb-44 min-h-screen justify-center place-items-center ml-1 relative"
     >
       <slot />
       <div
@@ -22,5 +23,9 @@ const { title } = Astro.props;
         rights reserved.
       </div>
     </main>
+    <div class="sm:hidden flex flex-col p-4 justify-center place-items-center">
+      <Banner />
+      turn your phone horizontally pls! this site is not very mobile friendly
+    </div>
   </body>
 </html>

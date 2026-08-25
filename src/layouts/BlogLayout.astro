@@ -20,10 +20,10 @@ import { routeFor } from "../data.js";
   </head>
 
   <body>
-    <main class="mx-auto p-16 place-items-center ml-1">
+    <main class="hidden sm:block mx-auto p-16 place-items-center ml-1">
       <div class="w-full h-full mx-auto">
         <Banner />
-        <div class="grid grid-cols-[1fr_5fr_1fr] gap-4">
+        <div class="grid grid-cols-[1fr_5fr] lg:grid-cols-[1fr_5fr_1fr] gap-4">
           <!-- First column -->
           <div>
             <div class="border border-gray-600 bg-background/80 pt-2 pb-8 mt-8">
@@ -103,11 +103,16 @@ import { routeFor } from "../data.js";
               }
             </div>
           </div>
-          <div>
+          <div class="hidden lg:block">
             <Links />
           </div>
         </div>
       </div>
     </main>
+
+    <div class="sm:hidden flex flex-col p-4 justify-center place-items-center">
+      <Banner />
+      turn your phone horizontally pls! this site is not very mobile friendly
+    </div>
   </body>
 </html>
