@@ -86,16 +86,18 @@
   };
 
   function init() {
-    let nekoFile = "./oneko.gif"
-    const curScript = document.currentScript
+    let nekoFile = "/oneko.gif";
+    const curScript = document.currentScript;
     if (curScript && curScript.dataset.cat) {
-      nekoFile = curScript.dataset.cat
+      nekoFile = curScript.dataset.cat;
     }
     if (curScript && curScript.dataset.persistPosition) {
       if (curScript.dataset.persistPosition === "") {
         persistPosition = true;
       } else {
-        persistPosition = JSON.parse(curScript.dataset.persistPosition.toLowerCase());
+        persistPosition = JSON.parse(
+          curScript.dataset.persistPosition.toLowerCase(),
+        );
       }
     }
 
@@ -136,17 +138,20 @@
 
     if (persistPosition) {
       window.addEventListener("beforeunload", function (event) {
-        window.localStorage.setItem("oneko", JSON.stringify({
-          nekoPosX: nekoPosX,
-          nekoPosY: nekoPosY,
-          mousePosX: mousePosX,
-          mousePosY: mousePosY,
-          frameCount: frameCount,
-          idleTime: idleTime,
-          idleAnimation: idleAnimation,
-          idleAnimationFrame: idleAnimationFrame,
-          bgPos: nekoEl.style.backgroundPosition
-        }));
+        window.localStorage.setItem(
+          "oneko",
+          JSON.stringify({
+            nekoPosX: nekoPosX,
+            nekoPosY: nekoPosY,
+            mousePosX: mousePosX,
+            mousePosY: mousePosY,
+            frameCount: frameCount,
+            idleTime: idleTime,
+            idleAnimation: idleAnimation,
+            idleAnimationFrame: idleAnimationFrame,
+            bgPos: nekoEl.style.backgroundPosition,
+          }),
+        );
       });
     }
 
