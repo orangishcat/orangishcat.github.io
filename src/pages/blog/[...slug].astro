@@ -43,7 +43,12 @@ const title =
 const postEntries = entries.filter((entry) => entry.id.startsWith(blogId));
 ---
 
-<BlogLayout title={title} entries={postEntries} index={index}>
+<BlogLayout
+  title={title}
+  entries={postEntries}
+  index={index}
+  pixelated={entry.data.pixelated}
+>
   <h1>{title}</h1>
   <Content />
 </BlogLayout>

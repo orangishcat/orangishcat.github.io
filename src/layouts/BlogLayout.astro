@@ -3,7 +3,7 @@ import MetaHead from "../components/MetaHead.astro";
 import Banner from "../components/Banner.astro";
 import A from "../components/Anchor.astro";
 import Links from "../components/Links.astro";
-const { title, entries, index } = Astro.props;
+const { title, entries, index, pixelated } = Astro.props;
 import { routeFor } from "../data.js";
 ---
 
@@ -12,6 +12,11 @@ import { routeFor } from "../data.js";
   <head>
     <MetaHead />
     <title>{(title ? `${title} | ` : "") + "orangishcat's happy place"}</title>
+    <style>
+      .image-crisp {
+        image-rendering: auto !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -59,6 +64,7 @@ import { routeFor } from "../data.js";
           <!-- Second column -->
           <div
             class="border border-gray-600 bg-background/80 p-4 flex flex-col justify-between font-sans"
+            class:list={[{ "image-crisp": !(pixelated ?? false) }]}
           >
             <div
               class="overflow-auto [&_a]:text-accent [&_pre]:p-2 [&_pre]:rounded-xl"
