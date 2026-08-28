@@ -4,8 +4,8 @@
 @theme {
   --color-primary: oklch(0.7779 0.1381 77);
   --color-accent: oklch(0.8219 0.1696 294.88);
-  --color-background: oklch(0.20 0.0115 91.74);
-  --color-background-dark: #07070F;
+  --color-background: oklch(0.2 0.0115 91.74);
+  --color-background-dark: #07070f;
   --color-background-light: oklch(0.2805 0.0115 91.74);
   --color-background-lighter: oklch(0.3481 0.0115 91.74);
 }
@@ -14,10 +14,14 @@ body {
   @apply text-base text-white bg-background-dark min-h-screen w-full m-0;
   image-rendering: pixelated;
   font-family: "Geist Pixel", sans-serif;
-  background-image: url('/assets/bg.avif'), url('/assets/stars only.avif');
-  background-position: center top, center 64px;
+  background-image: url("/assets/bg.avif"), url("/assets/stars only.avif");
+  background-position:
+    center top,
+    center 64px;
   background-repeat: no-repeat, repeat-y;
-  background-size: 100% auto, 100% auto;
+  background-size:
+    100% auto,
+    100% auto;
 }
 
 h1,
@@ -39,7 +43,7 @@ h2 {
 }
 
 h3 {
-    @apply text-2xl text-accent;
+  @apply text-2xl text-accent;
 }
 
 p {
@@ -59,5 +63,9 @@ ac {
 }
 
 a {
-    @apply hover:brightness-75 active:brightness-50 hover:underline
+  @apply hover:brightness-75 active:brightness-50 hover:underline hover:decoration-double!;
+}
+
+.content-area a {
+  @apply text-accent underline decoration-dashed;
 }

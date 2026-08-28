@@ -80,7 +80,9 @@ import { projects, blogs } from "../data.ts";
       </div>
 
       <!-- Second column -->
-      <div class="border-gray-600 border space-y-6 p-4 bg-background/80">
+      <div
+        class="border-gray-600 border space-y-6 p-4 bg-background/80 content-area"
+      >
         <div>
           <h2>About me</h2>
           <p>
@@ -108,7 +110,7 @@ import { projects, blogs } from "../data.ts";
                 would probably say <span class="text-primary">orange</span>.
               </li>
               <li>
-                <A href="/about-me" class="text-accent">More about me</A>
+                <A href="/about-me">More about me</A>
               </li>
             </ul>
           </p>
@@ -121,9 +123,15 @@ import { projects, blogs } from "../data.ts";
             and data science.
           </p>
           <p>
-            I have worked with <ac>C++</ac> for robotics before, but I want to improve
-            and also try out <ac>Rust</ac>. I usually don't focus much on
-            low-level development though, as manual memory management is a pain.
+            I also recently learned Rust and made my <A
+              href="https://github.com/orangishcat/cursed-tetris"
+              >first Rust project</A
+            >!
+          </p>
+          <p>
+            I have worked with <ac>C++</ac> for robotics before, but I usually don't
+            focus much on low-level development though as manual memory management
+            is a pain.
           </p>
         </div>
         <div>
@@ -173,7 +181,9 @@ import { projects, blogs } from "../data.ts";
           </ul>
         </p>
         <div
-          class="space-y-6 [&>div>div]:grid [&>div>div]:grid-cols-5 [&>div>div]:content-stretch [&>div>div]:gap-3"
+          class="space-y-6
+              [&>div>div]:grid [&>div>div]:grid-cols-5 [&>div>div]:content-stretch
+              [&>div>div]:gap-3"
         >
           <div>
             <h3>Games I like</h3>
