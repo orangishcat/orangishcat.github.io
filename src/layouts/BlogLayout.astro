@@ -21,9 +21,9 @@ import { routeFor } from "../data.js";
 
   <body>
     <main class="hidden sm:block mx-auto p-16 place-items-center ml-1">
-      <div class="w-full h-full mx-auto">
+      <div class="w-full h-full mx-auto max-w-7xl">
         <Banner />
-        <div class="grid grid-cols-[1fr_5fr] lg:grid-cols-[1fr_5fr_1fr] gap-4">
+        <div class="grid grid-cols-[1fr_5fr] lg:grid-cols-[1fr_4fr_1fr] gap-4">
           <!-- First column -->
           <div>
             <div class="border border-gray-600 bg-background/80 pt-2 pb-8 mt-8">
@@ -63,7 +63,7 @@ import { routeFor } from "../data.js";
 
           <!-- Second column -->
           <div
-            class="border border-gray-600 bg-background/80 p-4 flex flex-col justify-between font-sans"
+            class="border border-gray-600 bg-background/80 p-4 flex flex-col justify-between font-sans [&_hr]:my-4 [&_hr]:border-gray-600 [&_hr]:border-dashed [&_.astro-code]:mb-2"
             class:list={[{ "image-crisp": !(pixelated ?? false) }]}
           >
             <div
