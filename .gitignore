@@ -1,6 +1,5 @@
 # build output
 dist/
-.zed
 out.md
 .venv
 
